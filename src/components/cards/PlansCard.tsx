@@ -52,7 +52,7 @@ export function PlansCard(props: ClassCardProps): JSX.Element {
   const { result } = props;
   const description = result.description;
   const name = result.name;
-  const pricea : any = result.rawData.price;
+  // const pricea : any = result.rawData.price;
   // const value = pricea.value;
   const screenSize = useContext(ResponsiveContext);
   const cssClasses = useComposedCssClasses(builtInCssClasses);
@@ -62,7 +62,7 @@ export function PlansCard(props: ClassCardProps): JSX.Element {
     <div>{name}</div>
     <div>{description}</div>
     {/* Price: {value} € */}
-    <div className="my-2 mx-4 flex max-w-xl py-4 sm:flex-col">
+    {/* <div className="my-2 mx-4 flex max-w-xl py-4 sm:flex-col">
       {screenSize !== 'sm' && (
         <div className={cssClasses.ctaButton}>
           <div className={cssClasses.ctaButtonText}>Check availability</div>
@@ -73,6 +73,7 @@ export function PlansCard(props: ClassCardProps): JSX.Element {
           <div className={cssClasses.ctaButtonText}>Read more</div>
         </div>
       )}
-    </div></>
+    </div> */}
+    </>
   );
 }

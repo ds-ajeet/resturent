@@ -17,7 +17,8 @@ export default function LocationsPage({ verticalKey }: { verticalKey: string }) 
   const results = useAnswersState((state) => state.vertical.results) || [];
   
   return (
-    <><LocationProvider>
+    <>
+    <LocationProvider>
       <div className="flex">
         <div className="flex-grow">
           <DirectAnswer />
@@ -38,6 +39,8 @@ export default function LocationsPage({ verticalKey }: { verticalKey: string }) 
           <LocationBias customCssClasses={{ container: 'p-8' }} />
         </div>
       </div>
-    </LocationProvider><Footer /></>
+    </LocationProvider>
+    {/* <Footer /> */}
+    </>
   );
 }

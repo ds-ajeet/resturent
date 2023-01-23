@@ -57,6 +57,8 @@ export default function PlansPage({ verticalKey }: { verticalKey: string }) {
       </div>
       <LocationBias customCssClasses={{ container: 'p-8' }} />
       {classFacetOptions && classFacetOptions.length > 0 && screenSize === 'sm' && <MobileFilterLayout />}
-    </div><Footer /></>
+    </div>
+    {/* <Footer /> */}
+    </>
   );
 }

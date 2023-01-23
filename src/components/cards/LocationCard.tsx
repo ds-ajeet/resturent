@@ -178,7 +178,7 @@ export function LocationCard(props: LocationCardProps): JSX.Element {
 
 
 
-      <a className={cssClasses.title} href="https://communityfibre.co.uk/">{location.name}</a>
+      <a className={cssClasses.title} href="#">{location.name}</a>
 
       <div className={cssClasses.descriptionContainer}>
         <img className=" " src="https://www.kindpng.com/picc/m/705-7056384_address-png-file-address-icon-png-transparent-png.png" width="28" height="28"
@@ -189,19 +189,20 @@ export function LocationCard(props: LocationCardProps): JSX.Element {
       </div>
 
 
-      {renderHours(location.hours)}
+      {/* {renderHours(location.hours)} */}
 
 <div className="flex flex-row  items-center lp-param-results lp-subparam-phoneNumber map-add">
 <div className="mr-2 mt-1"><img className=" " src="https://static.vecteezy.com/system/resources/thumbnails/003/720/476/small/phone-icon-telephone-icon-symbol-for-app-and-messenger-vector.jpg" width="28" height="28" alt="" />
 </div>
 <div className="phone "><a id="address" className="" href={`tel:${location.mainPhone}`}>{location.mainPhone}</a>
 </div></div>
-      <a className={cssClasses.ctaButton} href="https://communityfibre.co.uk/">Check Availability</a>
-      <a className={cssClasses.ctaButton} href="https://communityfibre.co.uk/">View Packages</a>
-      <a className={cssClasses.ctaButton} href="https://communityfibre.co.uk/">More Info</a>
+
+      <a className={cssClasses.ctaButton} href="https://www.google.com/maps/dir//1+Crossgates+M+Albany,12202+NY+map/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x89de74ce535ea5d9:0x390ad09e0a99a909?sa=X&ved=2ahUKEwjDm_qAqN38AhWr2DgGHd7_AB0Q9Rd6BAhGEAU">Get Directions</a>
+      {/* <a className={cssClasses.ctaButton} href="https://communityfibre.co.uk/">View Packages</a> */}
+      {/* <a className={cssClasses.ctaButton} href="https://communityfibre.co.uk/">More Info</a> */}
       {screenSize !== 'sm' && (
         <div className={cssClasses.ctaButton}>
-          <div className="sm:text-body align-middle font-heading text-3xl font-bold sm:text-base">JOIN US</div>
+          {/* <div className="sm:text-body align-middle font-heading text-xl font-bold sm:text-base">JOIN US</div> */}
         </div>
       )}
     </div>

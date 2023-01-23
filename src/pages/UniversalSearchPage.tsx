@@ -20,7 +20,9 @@ export default function UniversalSearchPage(props: { universalResultsConfig: Uni
       <UniversalResults
         appliedFiltersConfig={universalResultsFilterConfig}
         verticalConfigs={universalResultsConfig} />
-    </div><Footer /></>
+    </div>
+    {/* <Footer /> */}
+    </>
     
   );
 }

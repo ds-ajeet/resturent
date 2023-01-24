@@ -91,6 +91,7 @@ export function FaqCard(props: TrainerCardProps): JSX.Element {
   const isVertical = useAnswersState((s) => s.meta.searchType) === 'vertical';
 
   return (
+    
  
 
 

@@ -15,7 +15,8 @@ export default function MenuPages({ verticalKey }: {
   usePageSetupEffect(verticalKey);
 
   return (
-    <><div>
+    <>
+    {/* <div> */}
       <DirectAnswer />
       <SpellCheck />
       <ResultsCount />
@@ -25,13 +26,15 @@ export default function MenuPages({ verticalKey }: {
         currentVerticalLabel='Menu Items'
         verticalsConfig={[
           { label: 'Locations', verticalKey: 'locations' },
-          { label: 'Switch', verticalKey: 'switch' },
-          { label: 'Plans', verticalKey: 'plans' },
-          { label: 'Faqs', verticalKey: 'faqs' }
+          { label: 'Menu Items', verticalKey: 'menu_items' },
         ]} />
-      <VerticalResults
+        <div className='grid grid-cols-2'>
+      <VerticalResults   
         CardComponent={MenuCard} />
+        </div>
       <LocationBias />
-    </div></>
+      <Footer/>
+    {/* </div> */}
+    </>
   )
 }

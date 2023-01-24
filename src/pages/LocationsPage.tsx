@@ -40,7 +40,7 @@ export default function LocationsPage({ verticalKey }: { verticalKey: string }) 
         </div>
       </div>
     </LocationProvider>
-    {/* <Footer /> */}
+    <Footer />
     </>
   );
 }

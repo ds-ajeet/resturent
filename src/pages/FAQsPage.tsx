@@ -32,7 +32,7 @@ export default function FAQsPage({ verticalKey }: {
       <VerticalResults
         CardComponent={FaqCard} />
       <LocationBias />
-      {/* <Footer /> */}
+      <Footer/>
     </div></>
   )
 }
